@@ -1,7 +1,12 @@
 import React from "react";
+import Splash from "../components/Splash/Splash";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Splash />
+    </div>
+  );
 };
 
 export default Home;

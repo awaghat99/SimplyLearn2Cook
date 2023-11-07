@@ -12,6 +12,42 @@
   background-size: contain;
 }
 
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  z-index: 2;
+  background-color: grey;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .right-arrow {
   transform: rotate(180deg);
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  z-index: 2;
+  background-color: grey;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot-holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 90%;
+}
+
+.dot {
+  font-size: 35px;
+  margin-right: 25px;
+  cursor: pointer;
+  color: grey;
+}
+
+.dot:nth-child(5) {
+  margin-right: 0;
 }

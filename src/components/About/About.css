@@ -22,3 +22,15 @@
   color: black;
   font-weight: bold;
 }
+
+@media (max-width: 800px) {
+  .about-text p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-text {
+    width: 85%;
+  }
+}

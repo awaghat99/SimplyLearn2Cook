@@ -8,7 +8,7 @@ const ProductEvents = () => {
     <div className="product-events">
       <div className="product block">
         <div className="product-text text">
-          <h2>Buy ©FlavaExplorer</h2>
+          <h2 className="red">Buy ©FlavaExplorer</h2>
         </div>
         <div className="product-image image">
           <img src={image1} alt="flavabox" />
@@ -19,7 +19,7 @@ const ProductEvents = () => {
           <img src={events} alt="cooking-event" />
         </div>
         <div className="events-text text">
-          <h2>Events</h2>
+          <h2 className="green">Events</h2>
         </div>
       </div>
     </div>

@@ -17,5 +17,13 @@
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
+}
+
+.green {
+  color: #2bb673;
+}
+
+.red {
+  color: #ed1b24;
 }

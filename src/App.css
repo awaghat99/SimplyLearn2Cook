@@ -1,5 +1,18 @@
+@font-face {
+  font-family: "Brevia-Regular";
+  src: url("./fonts/brevia-font-family-1699511975-0/HvDTrial_Brevia-Regular-BF6493a40670f4b.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Brevia-Bold";
+  src: url("./fonts/brevia-font-family-1699511975-0/HvDTrial_Brevia-Bold-BF6493a4067c1a1.otf")
+    format("opentype");
+}
+
 .App {
   text-align: center;
+  font-family: "Brevia-Bold";
 }
 
 a {

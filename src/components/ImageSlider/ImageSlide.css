@@ -14,23 +14,25 @@
 
 .left-arrow {
   position: absolute;
-  top: 50%;
+  top: 90%;
   left: 25px;
   z-index: 2;
-  background-color: grey;
+  background-color: #ffff;
   border-radius: 50%;
   cursor: pointer;
+  padding: 5px;
 }
 
 .right-arrow {
   transform: rotate(180deg);
   position: absolute;
-  top: 50%;
+  top: 90%;
   right: 25px;
   z-index: 2;
-  background-color: grey;
+  background-color: #ffff;
   border-radius: 50%;
   cursor: pointer;
+  padding: 5px;
 }
 
 .dot-holder {
@@ -45,7 +47,7 @@
   font-size: 35px;
   margin-right: 25px;
   cursor: pointer;
-  color: grey;
+  color: #807c7cbe;
 }
 
 .dot:nth-child(5) {

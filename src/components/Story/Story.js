@@ -27,8 +27,13 @@ const Story = () => {
           market
         </p>
       </div>
-
       <img src={guardian} alt="guardian-article" />
+      <div className="story-text">
+        <p>
+          But worry not; we’re here to help <br />
+          Cooking is a life lesson- it’s as simple as that
+        </p>
+      </div>
     </div>
   );
 };

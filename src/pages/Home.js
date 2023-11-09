@@ -3,6 +3,7 @@ import About from "../components/About/About";
 import Reviews from "../components/Reviews/Reviews";
 import Splash2 from "../components/Splash2/Splash2";
 import Story from "../components/Story/Story";
+import ProductEvents from "../components/ProductEvents/ProductEvents";
 import Contact from "../components/Contact/Contact";
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <Reviews />
       <Splash2 />
       <Story />
+      <ProductEvents />
       <Contact />
     </div>
   );

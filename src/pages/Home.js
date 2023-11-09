@@ -1,9 +1,8 @@
-import React from "react";
 import Splash from "../components/Splash/Splash";
 import About from "../components/About/About";
 import Reviews from "../components/Reviews/Reviews";
 import Splash2 from "../components/Splash2/Splash2";
-import Products from "../components/Products/Products";
+import Story from "../components/Story/Story";
 import Contact from "../components/Contact/Contact";
 
 const Home = () => {
@@ -13,7 +12,7 @@ const Home = () => {
       <About />
       <Reviews />
       <Splash2 />
-      <Products />
+      <Story />
       <Contact />
     </div>
   );

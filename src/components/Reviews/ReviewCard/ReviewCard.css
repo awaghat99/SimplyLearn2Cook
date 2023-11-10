@@ -37,7 +37,7 @@
 .review-text p:nth-child(1) {
   font-family: "Brevia-Regular";
   margin-bottom: 6px;
-  max-height: 170px;
+  max-height: 150px;
   overflow: hidden;
   position: relative;
 }

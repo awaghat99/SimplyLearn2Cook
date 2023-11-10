@@ -1,11 +1,24 @@
 .story {
   max-width: 100vw;
+  margin-bottom: 50px;
 }
 
 .story-text {
-  padding: 30px;
+  padding: 50px 75px;
+  font-size: 24px;
 }
 
 .story img {
   width: 100%;
+}
+
+hr {
+  width: 50%;
+}
+
+@media (max-width: 575px) {
+  .story-text {
+    padding: 25px;
+    font-size: 18px;
+  }
 }

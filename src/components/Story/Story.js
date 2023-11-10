@@ -38,6 +38,7 @@ const Story = () => {
           <span className="red">as that</span>
         </p>
       </div>
+      <hr />
     </div>
   );
 };

@@ -16,6 +16,13 @@ const Navbar = () => {
     setDropdown(!dropdown);
   };
 
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="nav">
       <nav>
@@ -31,10 +38,10 @@ const Navbar = () => {
             </li>
           </div>
           <div className="page-links">
-            <li>
-              <a className="green" href="#about">
+            <li className="green">
+              <Link to="/#about" onClick={scrollToAbout}>
                 About Story
-              </a>
+              </Link>
             </li>
             <li className="red">
               <Link to="/product">FlavaExplorer</Link>
@@ -81,10 +88,10 @@ const Navbar = () => {
         </ul>
       </nav>
       <ul className={dropdown ? "dropdown open" : "dropdown"}>
-        <li>
-          <a className="green" href="#about">
+        <li className="green">
+          <Link to="/#about" onClick={scrollToAbout}>
             About Story
-          </a>
+          </Link>
         </li>
         <li className="red">
           <Link to="/product">FlavaExplorer</Link>

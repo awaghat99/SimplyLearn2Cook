@@ -1,0 +1,28 @@
+.product-info {
+  width: 40%;
+  height: 100vh;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  margin-left: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.star-reviews {
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+}
+
+.product-info button {
+  font-family: "Brevia-Bold";
+  font-size: 24px;
+  background-color: #2bb673;
+  border: none;
+  color: white;
+  width: 85%;
+  margin: 0 auto;
+  padding: 10px 0;
+  border-radius: 50px;
+}

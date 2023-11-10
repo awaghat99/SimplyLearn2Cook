@@ -1,0 +1,25 @@
+.image-and-info {
+  display: flex;
+  justify-content: center;
+}
+
+.product-image-slider {
+  width: 40%;
+  margin-bottom: 100px;
+}
+
+.product-image-slider img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.sub-images {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-image {
+  width: 28%;
+  cursor: pointer;
+}

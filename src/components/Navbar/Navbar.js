@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import hamburger from "../../images/hamburger.svg";
 import cross from "../../images/cross.svg";
@@ -35,10 +36,8 @@ const Navbar = () => {
                 About Story
               </a>
             </li>
-            <li>
-              <a className="red" href="#projects">
-                FlavaExplorer
-              </a>
+            <li className="red">
+              <Link to="/product">FlavaExplorer</Link>
             </li>
             <li>
               <a href="#projects">Recipes</a>
@@ -49,7 +48,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className="red" href="#projects">
+              <a className="red" href="#events">
                 Events
               </a>
             </li>
@@ -87,10 +86,8 @@ const Navbar = () => {
             About Story
           </a>
         </li>
-        <li>
-          <a className="red" href="#projects">
-            FlavaExplorer
-          </a>
+        <li className="red">
+          <Link to="/product">FlavaExplorer</Link>
         </li>
         <li>
           <a href="#projects">Recipes</a>

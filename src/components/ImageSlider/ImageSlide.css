@@ -1,0 +1,55 @@
+.image-slide-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.image-slide {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 90%;
+  left: 25px;
+  z-index: 2;
+  background-color: #ffff;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.right-arrow {
+  transform: rotate(180deg);
+  position: absolute;
+  top: 90%;
+  right: 25px;
+  z-index: 2;
+  background-color: #ffff;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.dot-holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 90%;
+}
+
+.dot {
+  font-size: 35px;
+  margin-right: 25px;
+  cursor: pointer;
+  color: #807c7cbe;
+}
+
+.dot:nth-child(5) {
+  margin-right: 0;
+}

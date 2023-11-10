@@ -1,0 +1,12 @@
+.splash-2 {
+  max-width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/image5.jpeg");
+  background-size: 100% 100%;
+}
+
+@media (max-width: 500px) {
+  .splash-2 {
+    height: 75vh;
+  }
+}

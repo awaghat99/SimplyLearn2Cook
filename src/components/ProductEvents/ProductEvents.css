@@ -1,0 +1,20 @@
+.product-events {
+  max-width: 100vw;
+}
+
+.block {
+  display: flex;
+}
+
+.text {
+  width: 50%;
+  margin: auto;
+}
+
+.image {
+  width: 50%;
+}
+
+.image img {
+  width: 100%;
+}

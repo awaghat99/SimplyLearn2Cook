@@ -20,6 +20,14 @@ a {
   color: black;
 }
 
+.red a {
+  color: #ed1b24;
+}
+
+.green a {
+  color: #2bb673;
+}
+
 .green {
   color: #2bb673;
 }

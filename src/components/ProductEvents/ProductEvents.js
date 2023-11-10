@@ -5,7 +5,7 @@ import image1 from "../../images/image1.png";
 
 const ProductEvents = () => {
   return (
-    <div className="product-events">
+    <div className="product-events" id="events">
       <div className="product block">
         <div className="product-text text">
           <h2 className="red">Buy ©FlavaExplorer</h2>

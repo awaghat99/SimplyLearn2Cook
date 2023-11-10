@@ -1,0 +1,32 @@
+.review-card {
+  min-width: 30%;
+  margin: 0 30px;
+}
+
+.review-card h2 {
+  margin-top: 0;
+  text-align: left;
+}
+
+.img-and-review {
+  width: 100%;
+  display: flex;
+}
+
+.img-and-review img {
+  width: 35%;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.review-text p {
+  text-align: left;
+  padding: 0 10px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.review-text p:nth-child(1) {
+  font-family: "Brevia-Regular";
+  margin-bottom: 6px;
+}

@@ -83,19 +83,27 @@ const Navbar = () => {
       </nav>
       <ul className={dropdown ? "dropdown open" : "dropdown"}>
         <li>
-          <a href="#about">About Story</a>
+          <a className="green" href="#about">
+            About Story
+          </a>
         </li>
         <li>
-          <a href="#projects">FlavaExplorer</a>
+          <a className="red" href="#projects">
+            FlavaExplorer
+          </a>
         </li>
         <li>
           <a href="#projects">Recipes</a>
         </li>
         <li>
-          <a href="#projects">Our Community</a>
+          <a className="green" href="#projects">
+            Our Community
+          </a>
         </li>
         <li>
-          <a href="#projects">Events</a>
+          <a className="red" href="#projects">
+            Events
+          </a>
         </li>
         <li>
           <a href="#projects">Blog</a>

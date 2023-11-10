@@ -4,8 +4,12 @@
 }
 
 .review-card h2 {
+  box-sizing: border-box;
   margin-top: 0;
   text-align: left;
+  min-height: 66px;
+  display: flex;
+  align-items: center;
 }
 
 .img-and-review {

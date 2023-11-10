@@ -1,6 +1,7 @@
 import React from "react";
 import "./Reviews.css";
 import ReviewCard from "../ReviewCard/ReviewCard";
+import { reviews } from "../../../utils/ReviewsJson";
 import Star from "../Star/Star";
 
 const Reviews = () => {
@@ -16,12 +17,17 @@ const Reviews = () => {
         </div>
       </div>
       <div className="review-card-holder">
-        <ReviewCard />
-        <ReviewCard />
-        <ReviewCard />
-        <ReviewCard />
-        <ReviewCard />
-        <ReviewCard />
+        {reviews.map((review, index) => {
+          return (
+            <ReviewCard
+              key={index}
+              stars={review.stars}
+              heading={review.heading}
+              review={review.review}
+              reviewer={review.reviewer}
+            />
+          );
+        })}
       </div>
     </div>
   );

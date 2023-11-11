@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className="about" id="about">
       <div className="about-text">
-        <h2 className="green">
+        <h2 className="red">
           We are a social enterprise that believes in the power of cooking as a way to promote health,
           well-being and social inclusion.
         </h2>

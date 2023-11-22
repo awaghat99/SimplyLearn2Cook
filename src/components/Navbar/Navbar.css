@@ -50,7 +50,14 @@
 
 .flags-and-socials li {
   list-style: none;
-  margin-right: 10px;
+  margin-right: 5px;
+  padding-right: 5px;
+  border-right: 1px solid grey;
+}
+
+.flags-and-socials li:nth-child(1) {
+  border-left: 1px solid grey;
+  padding-left: 5px;
 }
 
 .dropdown {

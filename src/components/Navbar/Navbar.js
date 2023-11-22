@@ -40,7 +40,7 @@ const Navbar = () => {
           <div className="page-links">
             <li className="green">
               <Link to="/#about" onClick={scrollToAbout}>
-                About Story
+                About
               </Link>
             </li>
             <li className="red">
@@ -51,7 +51,7 @@ const Navbar = () => {
             </li>
             <li>
               <a className="green" href="#projects">
-                Our Community
+                Our Classes
               </a>
             </li>
             <li>
@@ -90,7 +90,7 @@ const Navbar = () => {
       <ul className={dropdown ? "dropdown open" : "dropdown"}>
         <li className="green">
           <Link to="/#about" onClick={scrollToAbout}>
-            About Story
+            About
           </Link>
         </li>
         <li className="red">
@@ -101,7 +101,7 @@ const Navbar = () => {
         </li>
         <li>
           <a className="green" href="#projects">
-            Our Community
+            Our Classes
           </a>
         </li>
         <li>

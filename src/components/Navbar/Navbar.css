@@ -69,7 +69,7 @@
   position: absolute;
   left: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #f3bc16;
   z-index: 4;
 }
 
@@ -101,7 +101,12 @@
   }
 
   .flags-and-socials li {
-    margin-right: 5px;
+    margin-right: 3px;
+    padding-right: 3px;
+  }
+
+  .flags-and-socials li:nth-child(1) {
+    padding-left: 3px;
   }
 
   .flags-and-socials img {

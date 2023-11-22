@@ -21,6 +21,10 @@ a {
   color: black;
 }
 
+button {
+  font-family: "Brevia-Bold";
+}
+
 .red a {
   color: #ed1b24;
 }

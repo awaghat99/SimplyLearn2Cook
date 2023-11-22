@@ -4,6 +4,7 @@ import Reviews from "../components/Reviews/Reviews/Reviews";
 import Splash2 from "../components/Splash2/Splash2";
 import Contact from "../components/Contact/Contact";
 import ProductCard from "../components/ProductCard/ProductCard";
+import Classes from "../components/Classes/Classes";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <About />
       <ProductCard />
       <Reviews />
+      <Classes />
       <Splash2 />
       <Contact />
     </div>

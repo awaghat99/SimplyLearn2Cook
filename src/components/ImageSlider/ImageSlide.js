@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import "./ImageSlide.css";
 import arrowLeft from "../../images/arrow-left.svg";
 

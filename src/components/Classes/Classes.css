@@ -1,3 +1,11 @@
+.classes-section {
+  margin-bottom: 100px;
+}
+
+.classes-section h2 {
+  font-size: 48px;
+}
+
 .classes-card-holder {
   display: flex;
   flex-wrap: wrap;

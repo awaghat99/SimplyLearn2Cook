@@ -1,5 +1,5 @@
 .classes-card {
-  margin: auto;
+  margin: 20px auto;
   width: 30%;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 4px 6px 0 rgba(0, 0, 0, 0.1);
   color: black;
@@ -32,11 +32,11 @@
 
 @media (max-width: 900px) {
   .classes-card {
-    width: 50%;
+    width: 45%;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .classes-card {
     width: 85%;
   }

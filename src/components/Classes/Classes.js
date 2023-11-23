@@ -6,19 +6,19 @@ const Classes = () => {
   const classesInfo = [
     {
       title: "Croissant",
-      img: require("../../images/cook-about-image.jpg"),
+      img: require("../../images/croissant.jpg"),
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet pretium metus. Vivamus ornare sollicitudin lacus vitae semper. Ut volutpat odio a elit accumsan varius.",
     },
     {
       title: "Croissant",
-      img: require("../../images/cook-about-image.jpg"),
+      img: require("../../images/croissant.jpg"),
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet pretium metus. Vivamus ornare sollicitudin lacus vitae semper. Ut volutpat odio a elit accumsan varius.",
     },
     {
       title: "Croissant",
-      img: require("../../images/cook-about-image.jpg"),
+      img: require("../../images/croissant.jpg"),
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet pretium metus. Vivamus ornare sollicitudin lacus vitae semper. Ut volutpat odio a elit accumsan varius.",
     },

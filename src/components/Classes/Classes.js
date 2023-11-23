@@ -25,7 +25,7 @@ const Classes = () => {
   ];
 
   return (
-    <div className="classes-section">
+    <div className="classes-section" id="classes-section">
       <h2>Our Classes</h2>
       <div className="classes-card-holder">
         {classesInfo.map((myClass, classIndex) => {
@@ -34,7 +34,7 @@ const Classes = () => {
               img={myClass.img}
               title={myClass.title}
               description={myClass.description}
-              index={classIndex}
+              key={classIndex}
             />
           );
         })}

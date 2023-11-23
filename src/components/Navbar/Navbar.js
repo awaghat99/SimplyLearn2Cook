@@ -27,6 +27,13 @@ const Navbar = () => {
     }
   };
 
+  const scrollToClasses = () => {
+    const classesSection = document.getElementById("classes-section");
+    if (classesSection) {
+      classesSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="nav">
       <nav>
@@ -56,7 +63,7 @@ const Navbar = () => {
               <Link to="/coming-soon">Recipes</Link>
             </li>
             <li>
-              <Link className="green" to="/coming-soon">
+              <Link className="green" onClick={scrollToClasses}>
                 Our Classes
               </Link>
             </li>
@@ -115,7 +122,12 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/coming-soon" className="green" onClick={closeDropdown}>
+          <Link
+            className="green"
+            onClick={() => {
+              closeDropdown();
+              scrollToClasses();
+            }}>
             Our Classes
           </Link>
         </li>

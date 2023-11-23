@@ -12,13 +12,13 @@ const Contact = () => {
         </p>
       </div>
       <form action="https://formspree.io/f/xaygknwo" method="POST">
-        <label for="name">Name:</label>
+        <label htmlFor="name">Name:</label>
         <input id="name" placeholder="Enter your name" name="name" required></input>
 
-        <label for="email">Email:</label>
+        <label htmlFor="email">Email:</label>
         <input id="email" type="email" placeholder="Enter your email" name="email" required></input>
 
-        <label for="message">Message:</label>
+        <label htmlFor="message">Message:</label>
         <textarea id="message" placeholder="Enter your message" name="message" required></textarea>
 
         <button type="submit">Send</button>

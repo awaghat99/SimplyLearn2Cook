@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import "./ImageSlide.css";
 import arrowLeft from "../../images/arrow-left.svg";
 
 const ImageSlide = (props) => {
+  const timerRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goPreviousSlide = () => {
@@ -10,14 +11,27 @@ const ImageSlide = (props) => {
     isFirstSlide ? setCurrentIndex(props.slides.length - 1) : setCurrentIndex(currentIndex - 1);
   };
 
-  const goNextSlide = () => {
+  const goNextSlide = useCallback(() => {
     const isLastSlide = currentIndex === props.slides.length - 1;
     isLastSlide ? setCurrentIndex(0) : setCurrentIndex(currentIndex + 1);
-  };
+  }, [currentIndex, props.slides]);
 
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
+
+  useEffect(() => {
+    if (timerRef.current) {
+      clearTimeout(timerRef.current);
+    }
+    timerRef.current = setTimeout(() => {
+      goNextSlide();
+    }, 2000);
+
+    return () => {
+      clearTimeout(timerRef.current);
+    };
+  }, [goNextSlide]);
 
   return (
     <div className="image-slide-container">

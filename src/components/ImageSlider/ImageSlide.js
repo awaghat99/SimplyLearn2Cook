@@ -8,7 +8,7 @@ const ImageSlide = (props) => {
     <div>
       <Slide duration={4000} pauseOnHover={false}>
         {props.slides.map((slideImage, index) => (
-          <div key={index} className="slide" style={{ backgroundImage: `url(${slideImage.url})` }}>
+          <div key={index} className="slide-for-splash" style={{ backgroundImage: `url(${slideImage.url})` }}>
             <div className="button-holder">
               {slideImage.buttons.map((button, buttonIndex) => {
                 return (

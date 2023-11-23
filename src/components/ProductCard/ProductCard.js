@@ -1,15 +1,32 @@
 import React from "react";
 import "./ProductCard.css";
-import productImage from "../../images/image3.png";
 import { Link } from "react-router-dom";
+import { Slide } from "react-slideshow-image";
+import { productDetails } from "../../utils/ProductDetails";
+import "react-slideshow-image/dist/styles.css";
 
 const ProductCard = () => {
+  const divStyle = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "400px",
+  };
+
   return (
     <div className="product-section">
       <h2> Our Product</h2>
       <div className="product-card">
         <div className="product-card-image-holder">
-          <img src={productImage} alt="flava-explorer" />
+          <Slide arrows={false} duration={2000} canSwipe={false} pauseOnHover={false}>
+            {productDetails.map((slideImage, index) => (
+              <div key={index}>
+                <div style={{ ...divStyle, backgroundImage: `url(${slideImage.image})` }}></div>
+              </div>
+            ))}
+          </Slide>
         </div>
         <div className="product-details">
           <h3>FlavaExplorer</h3>

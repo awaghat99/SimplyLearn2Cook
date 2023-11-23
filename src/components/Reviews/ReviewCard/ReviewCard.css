@@ -1,6 +1,6 @@
 .review-card {
-  min-width: 30%;
-  margin: 0 30px;
+  box-sizing: border-box;
+  padding: 0 30px;
 }
 
 .review-card h2 {
@@ -56,16 +56,4 @@
   padding: 3px;
   border-radius: 3px;
   font-size: 12px;
-}
-
-@media (max-width: 1000px) {
-  .review-card {
-    min-width: 50%;
-  }
-}
-
-@media (max-width: 725px) {
-  .review-card {
-    min-width: 95%;
-  }
 }

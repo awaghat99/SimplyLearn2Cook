@@ -24,13 +24,29 @@
 }
 
 @media (max-width: 800px) {
+  .about-text {
+    width: 85%;
+  }
+
+  .about-text h2 {
+    font-size: 30px;
+  }
+
   .about-text p {
-    width: 100%;
+    font-size: 22px;
   }
 }
 
 @media (max-width: 600px) {
   .about-text {
-    width: 85%;
+    width: 95%;
+  }
+
+  .about-text h2 {
+    font-size: 24px;
+  }
+
+  .about-text p {
+    font-size: 14px;
   }
 }

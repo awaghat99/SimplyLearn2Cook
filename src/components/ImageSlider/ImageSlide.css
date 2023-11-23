@@ -28,4 +28,9 @@
   .slide {
     height: 45vh;
   }
+
+  .button-holder button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
 }

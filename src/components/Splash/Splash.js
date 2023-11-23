@@ -4,8 +4,20 @@ import ImageSlide from "../ImageSlider/ImageSlide";
 
 const Splash = () => {
   const slides = [
-    { url: require("../../images/image1.png"), title: "image-1" },
-    { url: require("../../images/image2.jpeg"), title: "image-2" },
+    {
+      url: require("../../images/image1.png"),
+      buttons: [
+        { text: "Buy Now", link: "/product" },
+        { text: "Learn More", link: "/product" },
+      ],
+    },
+    {
+      url: require("../../images/image2.jpeg"),
+      buttons: [
+        { text: "Book Now", link: "/coming-soon" },
+        { text: "Learn More", link: "/coming-soon" },
+      ],
+    },
   ];
   return (
     <div className="slider-wrapper">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ReviewCard.css";
 import Star from "../Star/Star";
-import placeholder from "../../../images/cook-about-image.jpg";
+import productImage from "../../../images/image1.png";
 
 const ReviewCard = (props) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -17,7 +17,7 @@ const ReviewCard = (props) => {
       </div>
       <h2>{props.heading}</h2>
       <div className="img-and-review">
-        <img src={placeholder} alt="placeholder" />
+        <img src={productImage} alt="product" />
         <div className={`review-text ${isExpanded ? "expanded" : ""}`}>
           <p>{props.review}</p>
           {props.review.length > 175 && (

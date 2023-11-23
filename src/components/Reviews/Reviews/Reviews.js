@@ -36,7 +36,7 @@ const Reviews = () => {
         </div>
       </div>
       <div className="review-card-holder">
-        <Slide arrows={false} responsive={responsiveSettings}>
+        <Slide arrows={false} responsive={responsiveSettings} pauseOnHover={false}>
           {reviews.map((review, index) => (
             <ReviewCard
               key={index}

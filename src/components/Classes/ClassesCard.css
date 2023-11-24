@@ -5,8 +5,16 @@
   color: black;
 }
 
+.classes-card-image-holder {
+  width: 100%;
+  aspect-ratio: 1.5;
+  background-size: cover;
+  background-position: center;
+}
+
 .classes-card-image-holder img {
   width: 100%;
+  aspect-ratio: 1.5;
 }
 
 .classes-details {

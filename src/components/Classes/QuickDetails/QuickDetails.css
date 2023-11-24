@@ -21,3 +21,11 @@
   height: 20px;
   margin-right: 10px;
 }
+
+@media (max-width: 800px) {
+  .quick-details {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

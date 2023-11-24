@@ -69,3 +69,20 @@
 .detailed-description h2 {
   font-size: 36px;
 }
+
+@media (max-width: 800px) {
+  .book-now-img {
+    display: none;
+  }
+
+  .book-now-box {
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+  }
+
+  .detailed-description {
+    width: 90%;
+    padding-bottom: 105px;
+  }
+}

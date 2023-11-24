@@ -5,6 +5,13 @@ export const classesInfo = [
     img: require("../images/croissant.jpg"),
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet pretium metus. Vivamus ornare sollicitudin lacus vitae semper. Ut volutpat odio a elit accumsan varius.",
+    quickInfo: {
+      category: "In-Person",
+      duration: "2 hours",
+      cuisineType: "French",
+      classType: "In-person Class",
+      ageMinimum: "Ages 15+ only. Those aged 15-17 must be accompanied by a paying adult.",
+    },
   },
   {
     id: "2",
@@ -12,6 +19,13 @@ export const classesInfo = [
     img: require("../images/ramen.jpg"),
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet pretium metus. Vivamus ornare sollicitudin lacus vitae semper. Ut volutpat odio a elit accumsan varius.",
+    quickInfo: {
+      category: "In-Person",
+      duration: "2 hours",
+      cuisineType: "Japanese",
+      classType: "In-person Class",
+      ageMinimum: "Ages 15+ only. Those aged 15-17 must be accompanied by a paying adult.",
+    },
   },
   {
     id: "3",
@@ -19,5 +33,12 @@ export const classesInfo = [
     img: require("../images/tomato.jpg"),
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet pretium metus. Vivamus ornare sollicitudin lacus vitae semper. Ut volutpat odio a elit accumsan varius.",
+    quickInfo: {
+      category: "In-Person",
+      duration: "2 hours",
+      cuisineType: "Italian",
+      classType: "In-person Class",
+      ageMinimum: "Ages 15+ only. Those aged 15-17 must be accompanied by a paying adult.",
+    },
   },
 ];

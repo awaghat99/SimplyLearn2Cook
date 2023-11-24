@@ -1,0 +1,23 @@
+.quick-details {
+  margin-top: 100px;
+  margin-left: 3%;
+  background-color: #f2f2f3;
+  width: 50%;
+  padding: 15px;
+  text-align: left;
+}
+
+.quick-details p {
+  margin: 3px;
+}
+
+.quick-details-sub {
+  display: flex;
+  align-items: center;
+}
+
+.quick-details-sub img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}

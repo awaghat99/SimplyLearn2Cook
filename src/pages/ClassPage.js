@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { classesInfo } from "../utils/ClassesInfo";
+import ClassPageComponent from "../components/Classes/ClassPageComponent";
 
 const ClassPage = () => {
   const [classInfo, setClassInfo] = useState(null);
@@ -12,25 +13,13 @@ const ClassPage = () => {
 
       if (classInfo) {
         setClassInfo(classInfo);
-      } else {
-        setClassInfo(classesInfo[0]);
       }
     };
 
     getImageForId(id);
   }, [id]);
 
-  return (
-    <div>
-      {classInfo && (
-        <>
-          <h1>{classInfo.title}</h1>
-          <img src={classInfo.img} alt={`Class ${classInfo.id}`} style={{ width: "100%", height: "auto" }} />
-          <p>{classInfo.description}</p>
-        </>
-      )}
-    </div>
-  );
+  return <div>{classInfo ? <ClassPageComponent classInfo={classInfo} /> : "Not Found"}</div>;
 };
 
 export default ClassPage;

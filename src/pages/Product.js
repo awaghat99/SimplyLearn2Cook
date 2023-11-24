@@ -5,7 +5,7 @@ import ProductDescription from "../components/ProductDescription/ProductDescript
 
 const Product = () => {
   return (
-    <div>
+    <div className="product-page">
       <div className="image-and-info">
         <ProductImageSlider />
         <ProductInfo />

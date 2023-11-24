@@ -1,0 +1,51 @@
+.classes-card {
+  margin: 20px auto;
+  width: 30%;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.classes-card-image-holder {
+  width: 100%;
+  aspect-ratio: 1.5;
+  background-size: cover;
+  background-position: center;
+}
+
+.classes-card-image-holder img {
+  width: 100%;
+  aspect-ratio: 1.5;
+}
+
+.classes-details {
+  padding: 20px 10px;
+  text-align: left;
+}
+
+.classes-details h3 {
+  font-size: 25px;
+}
+
+.classes-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.classes-buttons button {
+  border: 2px solid black;
+  padding: 15px 25px;
+  background-color: rgba(0, 128, 0, 0);
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .classes-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  .classes-card {
+    width: 85%;
+  }
+}

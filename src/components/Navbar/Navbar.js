@@ -16,10 +16,21 @@ const Navbar = () => {
     setDropdown(!dropdown);
   };
 
+  const closeDropdown = () => {
+    setDropdown(false);
+  };
+
   const scrollToAbout = () => {
     const aboutSection = document.getElementById("about");
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToClasses = () => {
+    const classesSection = document.getElementById("classes-section");
+    if (classesSection) {
+      classesSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -34,83 +45,101 @@ const Navbar = () => {
           )}
           <div className="logo">
             <li>
-              <img src={cookLogo} alt="logo" />
+              <Link to="/" onClick={closeDropdown}>
+                <img src={cookLogo} alt="logo" />
+              </Link>
             </li>
           </div>
           <div className="page-links">
             <li className="green">
               <Link to="/#about" onClick={scrollToAbout}>
-                About Story
+                About
               </Link>
             </li>
             <li className="red">
               <Link to="/product">FlavaExplorer</Link>
             </li>
             <li>
-              <a href="#projects">Recipes</a>
+              <Link to="/coming-soon">Recipes</Link>
             </li>
             <li>
-              <a className="green" href="#projects">
-                Our Community
-              </a>
+              <Link className="green" onClick={scrollToClasses}>
+                Our Classes
+              </Link>
             </li>
             <li>
-              <a className="red" href="#events">
+              <Link className="red" to="/coming-soon">
                 Events
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#projects">Blog</a>
+              <Link to="/coming-soon">Blog</Link>
             </li>
           </div>
           <div className="flags-and-socials">
             <li>
-              <span>
+              <Link to="/coming-soon">
                 <img src={franceFlag} alt="france-flag" />
-              </span>
+              </Link>
             </li>
             <li>
-              <span>
+              <Link to="/coming-soon">
                 <img src={germanyFlag} alt="germany-flag" />
-              </span>
+              </Link>
             </li>
             <li>
-              <span>
+              <Link to="/coming-soon">
                 <img src={instagram} alt="instagram-logo" />
-              </span>
+              </Link>
             </li>
             <li>
-              <span>
+              <Link to="/coming-soon">
                 <img src={cart} alt="shopping-cart" />
-              </span>
+              </Link>
             </li>
           </div>
         </ul>
       </nav>
       <ul className={dropdown ? "dropdown open" : "dropdown"}>
         <li className="green">
-          <Link to="/#about" onClick={scrollToAbout}>
-            About Story
+          <Link
+            to="/#about"
+            onClick={() => {
+              scrollToAbout();
+              closeDropdown();
+            }}>
+            About
           </Link>
         </li>
         <li className="red">
-          <Link to="/product">FlavaExplorer</Link>
+          <Link to="/product" onClick={closeDropdown}>
+            FlavaExplorer
+          </Link>
         </li>
         <li>
-          <a href="#projects">Recipes</a>
+          <Link to="/coming-soon" onClick={closeDropdown}>
+            Recipes
+          </Link>
         </li>
         <li>
-          <a className="green" href="#projects">
-            Our Community
-          </a>
+          <Link
+            className="green"
+            onClick={() => {
+              closeDropdown();
+              scrollToClasses();
+            }}>
+            Our Classes
+          </Link>
         </li>
         <li>
-          <a className="red" href="#projects">
+          <Link to="/coming-soon" className="red" onClick={closeDropdown}>
             Events
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#projects">Blog</a>
+          <Link to="/coming-soon" onClick={closeDropdown}>
+            Blog
+          </Link>
         </li>
       </ul>
     </div>

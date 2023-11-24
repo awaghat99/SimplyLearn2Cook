@@ -1,6 +1,6 @@
 .review-card {
-  min-width: 30%;
-  margin: 0 30px;
+  box-sizing: border-box;
+  padding: 0 30px;
 }
 
 .review-card h2 {
@@ -10,6 +10,7 @@
   min-height: 66px;
   display: flex;
   align-items: center;
+  font-size: 24px;
 }
 
 .img-and-review {
@@ -18,7 +19,7 @@
 }
 
 .img-and-review img {
-  width: 35%;
+  width: 45%;
   height: 150px;
   border-radius: 5px;
 }
@@ -50,22 +51,10 @@
   cursor: pointer;
   color: #007bff;
   position: absolute;
-  bottom: 40px;
+  bottom: 61px;
   background-color: #ffffff;
-  right: 10px;
+  right: 13px;
   padding: 3px;
   border-radius: 3px;
   font-size: 12px;
-}
-
-@media (max-width: 1000px) {
-  .review-card {
-    min-width: 50%;
-  }
-}
-
-@media (max-width: 725px) {
-  .review-card {
-    min-width: 95%;
-  }
 }

@@ -13,11 +13,25 @@
 .App {
   text-align: center;
   font-family: "Brevia-Bold";
+  background-color: #f3bc16;
+}
+
+.regular {
+  font-family: "Brevia-Regular";
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+h2 {
+  font-size: 48px;
+  margin: 0;
+}
+
+button {
+  font-family: "Brevia-Bold";
 }
 
 .red a {

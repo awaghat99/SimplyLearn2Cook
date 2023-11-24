@@ -11,6 +11,10 @@ const ProductInfo = () => {
       </div>
       <div>
         <h2 className="red">Flava Explorer</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus dolor a varius iaculis.
+          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        </p>
         <p className="red">£49.99</p>
       </div>
       <button>Add to basket</button>

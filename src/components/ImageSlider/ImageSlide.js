@@ -1,45 +1,26 @@
-import { useState } from "react";
 import "./ImageSlide.css";
-import arrowLeft from "../../images/arrow-left.svg";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+import { Link } from "react-router-dom";
 
 const ImageSlide = (props) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const goPreviousSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    isFirstSlide ? setCurrentIndex(props.slides.length - 1) : setCurrentIndex(currentIndex - 1);
-  };
-
-  const goNextSlide = () => {
-    const isLastSlide = currentIndex === props.slides.length - 1;
-    isLastSlide ? setCurrentIndex(0) : setCurrentIndex(currentIndex + 1);
-  };
-
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
-  };
-
   return (
-    <div className="image-slide-container">
-      <img className="left-arrow" src={arrowLeft} alt="arrow-left" onClick={goPreviousSlide} />
-      <img className="right-arrow" src={arrowLeft} alt="arrow-left" onClick={goNextSlide} />
-      <div
-        className="image-slide"
-        style={{ backgroundImage: `url(${props.slides[currentIndex].url})` }}></div>
-      <div className="dot-holder">
-        {props.slides.map((slide, slideIndex) => {
-          return (
-            <div
-              className="dot"
-              key={slideIndex}
-              onClick={() => {
-                goToSlide(slideIndex);
-              }}>
-              &#8226;
+    <div>
+      <Slide duration={4000} pauseOnHover={false}>
+        {props.slides.map((slideImage, index) => (
+          <div key={index} className="slide-for-splash" style={{ backgroundImage: `url(${slideImage.url})` }}>
+            <div className="button-holder">
+              {slideImage.buttons.map((button, buttonIndex) => {
+                return (
+                  <Link to={button.link}>
+                    <button key={buttonIndex}>{button.text}</button>
+                  </Link>
+                );
+              })}
             </div>
-          );
-        })}
-      </div>
+          </div>
+        ))}
+      </Slide>
     </div>
   );
 };

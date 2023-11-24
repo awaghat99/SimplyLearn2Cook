@@ -3,8 +3,27 @@ import "./Reviews.css";
 import ReviewCard from "../ReviewCard/ReviewCard";
 import { reviews } from "../../../utils/ReviewsJson";
 import Star from "../Star/Star";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
 const Reviews = () => {
+  const responsiveSettings = [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+  ];
+
   return (
     <div className="review">
       <div className="review-title">
@@ -17,8 +36,8 @@ const Reviews = () => {
         </div>
       </div>
       <div className="review-card-holder">
-        {reviews.map((review, index) => {
-          return (
+        <Slide arrows={false} responsive={responsiveSettings} pauseOnHover={false}>
+          {reviews.map((review, index) => (
             <ReviewCard
               key={index}
               stars={review.stars}
@@ -26,8 +45,8 @@ const Reviews = () => {
               review={review.review}
               reviewer={review.reviewer}
             />
-          );
-        })}
+          ))}
+        </Slide>
       </div>
     </div>
   );

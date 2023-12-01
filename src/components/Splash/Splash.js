@@ -8,7 +8,7 @@ const Splash = () => {
       url: require("../../images/image1.png"),
       buttons: [
         { text: "Buy Now", link: "/product" },
-        { text: "Learn More", link: "/product" },
+        { text: "Learn More", link: "/product#description" },
       ],
     },
     {

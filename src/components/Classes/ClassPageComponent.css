@@ -23,7 +23,7 @@
   z-index: 2;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   height: 100%;
   justify-content: center;
   text-align: left;
@@ -31,7 +31,7 @@
 }
 
 .class-splash-content h2 {
-  font-size: 64px;
+  font-size: 58px;
 }
 
 .book-now-box {

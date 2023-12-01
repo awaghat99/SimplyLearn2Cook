@@ -39,7 +39,7 @@ const ProductCard = () => {
             <Link to="/product">
               <button>Buy Now</button>
             </Link>
-            <Link to="/product">
+            <Link to="/product#description">
               <button>Learn More</button>
             </Link>
           </div>
